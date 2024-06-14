@@ -1,0 +1,59 @@
+.background-skills{
+    background-color: black;
+    background-image: url(../assets/background.png) ;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    transform: rotate(180deg);
+}
+
+.content-container{
+  transform: rotate(180deg);
+}
+
+.p-skills{
+  font-size: 1.5em;
+}
+
+.text-skill{
+  margin: 11rem 0rem;
+}
+
+.img-skill-container{
+  max-width: 1600px;
+ overflow: hidden;
+  align-self: center;
+  margin-bottom: 2em;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20% , white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20% , white 80%, transparent); ;
+}
+
+.imgs-skill{
+  display: flex;
+  gap: 6rem;
+  width: max-content;
+}
+
+.img{
+  width: 6rem;
+
+}
+
+/* Media query pentru ecrane cu lățimea maximă de 768px */
+@media only screen and (max-width: 768px) {
+  .p-skills{
+    font-size: 1em;
+  }
+  .imgs-skill{
+    display: flex;
+    gap: 6rem;
+  }
+  .img{
+    width: 3em;
+  
+  }
+  
+}
+
+
+

@@ -1,0 +1,96 @@
+/* Media query pentru ecrane cu lățimea maximă de 768px */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .text-container {
+        margin: 0 4rem;
+    }
+
+    
+    .contact-btn {
+        font-family: "Kanit", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem; 
+        color: white;
+        font-weight: 400;
+        border: solid 1px #28BC2E;
+        background: none;
+        margin-top: 1.5rem;
+        width: 20rem;
+        height: 3.5rem;
+        text-align: center;
+    }
+
+    .link-btn{
+        font-family:"Kanit" , sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem; 
+        color: white;
+        font-weight: 400;
+        text-align: center;
+    }
+    p {
+        font-family: "Kanit", sans-serif;
+        font-size: 0.6rem;
+        color: white;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.1rem;
+    }
+    .p-skills{
+        font-size: 0.6rem;   
+    }
+    
+}
+
+/* Media query pentru ecrane cu lățimea maximă de 486px */
+@media only screen and (max-width: 486px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .text-container {
+        margin: 0 1rem;
+    }
+   
+    .contact-btn {
+        font-family: "Kanit", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.1rem; 
+        color: white;
+        font-weight: 400;
+        border: solid 1px #28BC2E;
+        background: none;
+        margin-top: 1.5rem;
+        width: 15rem;
+        height: 3rem;
+        text-align: center;
+    }
+
+    .link-btn{
+        font-family:"Kanit" , sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.1rem; 
+        color: white;
+        font-weight: 400;
+        text-align: center;
+    }
+    p {
+        font-family: "Kanit", sans-serif;
+        font-size: 0.6rem;
+        color: white;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.1rem;
+    }
+
+    .p-skills{
+        font-size: 0.6rem;   
+    }
+}

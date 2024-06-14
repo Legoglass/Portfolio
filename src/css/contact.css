@@ -1,0 +1,38 @@
+.background-contact{
+    background-color: black;
+    background-image: url(../assets/background.png) ;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.text-container-contact{
+  margin: 0 8rem;
+  height: 100vh;
+}
+
+/* Media query pentru ecrane cu lățimea maximă de 768px */
+@media only screen and (max-width: 992px) {
+  .text-container-contact{
+    margin: 0 4rem;
+    height: 100vh;
+  }
+  .contatc-container-info{
+    gap: 2rem;
+  }
+
+  .contact-img{
+    width: 2rem;
+  }
+}
+
+/* Media query pentru ecrane cu lățimea maximă de 486px */
+@media only screen and (max-width: 486px) {
+
+  .text-container-contact{
+    margin: 0 1rem;
+    height: 100vh;
+  }
+
+}

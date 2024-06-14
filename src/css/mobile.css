@@ -1,0 +1,31 @@
+.mobile-container{   
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    border-radius: 0;
+    background-color: black;
+    background-image: url(../assets/background.png) ;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.close-btn{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 0;
+}
+
+.nav-bar-list-mobile{
+    list-style: none;
+    gap: 5rem;
+    padding: 0;
+}
+
+a{
+    font-size: 2rem;
+}

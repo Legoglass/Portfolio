@@ -1,0 +1,36 @@
+.background-atu{
+    background-color: black;
+    background-image: url(../assets/background.png) ;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.iphone-img{
+  height: 600px;
+  width: 300px;
+  box-shadow: 10px 15px 19px 10px rgba(0, 0, 0, 0.73);
+}
+
+/* Media query pentru ecrane cu lățimea maximă de 768px */
+@media only screen and (max-width: 992px) {
+  .iphone-img{
+    height: 300px;
+    width: 150px;
+    box-shadow: 10px 15px 19px 10px rgba(0, 0, 0, 0.73);
+  }
+
+  p{
+    font-size: 1em;
+  }
+  
+  .row-atu{
+    gap: 5rem;
+  }
+
+}
+
+/* Media query pentru ecrane cu lățimea maximă de 486px */
+@media only screen and (max-width: 486px) {
+  
+}
