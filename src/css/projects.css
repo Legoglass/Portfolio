@@ -1,42 +1,66 @@
-.background-projects{
-    background-color: black;
-    background-image: url(../assets/background.png) ;
-    background-size:cover;
-    background-position: center;
-
-    height: 100vh;
-    transform: rotate(180deg);
-}
-
-.container-project{
+.background-projects {
+  background-color: black;
+  background-image: url(../assets/background.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   transform: rotate(180deg);
-  padding-bottom: 8rem;
+  scroll-snap-align: center;
+  overflow: hidden;
 }
 
-.mac-img{
+.container-project {
+  transform: rotate(180deg);
+  padding-bottom: 10vh;
+}
+
+.mac-img {
   width: 90%;
 }
 
-.text-project-container{
+.text-project-container {
   margin: 0rem 8rem;
 }
 
-.projects-text{
+.projects-text {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 992px) {
-  .projects-text{
-    font-size: 1em;
-  }
-  
- .main-project-container{
-  gap: 3rem;
- }
-
+.img-project-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
 }
 
-/* Media query pentru ecrane cu lățimea maximă de 486px */
-@media only screen and (max-width: 486px) {
-  
+.animation-container-project {
+  position: absolute;
+  top: 4.8%; /* Ajustează această valoare pentru a alinia imaginea pe ecranul laptopului */
+  left: 15.4%; /* Ajustează această valoare pentru a alinia imaginea pe ecranul laptopului */
+  width: 70%; /* Ajustează această valoare pentru a potrivi lățimea */
+  height: 77%; /* Ajustează această valoare pentru a potrivi înălțimea */
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+.photo-bg-project {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+}
+
+@media only screen and (max-width: 992px) {
+  .projects-text {
+    font-size: 1em;
+  }
+
+  .main-project-container {
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .main-project-container{
+    margin-bottom: 0;
+  }
 }

@@ -24,7 +24,7 @@ function NavBar({ handleMobileMenu }) {
             </a>
           </li>
           <li>
-            <a className="link-web" href="#projects">
+            <a className="link-web" href="#atu">
               Projects
             </a>
           </li>

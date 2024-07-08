@@ -4,7 +4,10 @@
     background-size:cover;
     background-position: center;
     height: 100vh;
+    scroll-snap-align: start; 
+    overflow: hidden;
 }
+
 
 
 .text-container-contact{
@@ -12,11 +15,15 @@
   height: 100vh;
 }
 
+.contact-img{
+  cursor: pointer;
+}
+
 /* Media query pentru ecrane cu lățimea maximă de 768px */
 @media only screen and (max-width: 992px) {
   .text-container-contact{
     margin: 0 4rem;
-    height: 100vh;
+    
   }
   .contatc-container-info{
     gap: 2rem;
@@ -32,7 +39,11 @@
 
   .text-container-contact{
     margin: 0 1rem;
-    height: 100vh;
+    
   }
+
+  .background-contact{
+    height: 110vh;
+}
 
 }

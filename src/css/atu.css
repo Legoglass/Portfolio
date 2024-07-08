@@ -4,13 +4,41 @@
     background-size:cover;
     background-position: center;
     height: 100vh;
+    scroll-snap-align:center;
+    overflow: hidden;
 }
 
 .iphone-img{
   height: 600px;
   width: 300px;
   box-shadow: 10px 15px 19px 10px rgba(0, 0, 0, 0.73);
+  overflow:hidden;
 }
+
+.iphone-container{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.photo-bg{
+  position: absolute;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.animation-container{
+  overflow: hidden;
+  position: absolute;
+  height: 575px;
+  width: 270px;
+  border-radius: 30px;
+}
+
+
+
+
 
 /* Media query pentru ecrane cu lățimea maximă de 768px */
 @media only screen and (max-width: 992px) {
@@ -25,12 +53,30 @@
   }
   
   .row-atu{
-    gap: 5rem;
+    gap: 2rem;
+  }
+
+  .photo-bg{
+    position: absolute;
+    height: 287px;
+    width: 140px;
+    border-radius: 20px;
+  }
+
+  .animation-container{
+    overflow: hidden;
+    position: absolute;
+    height: 287px;
+    width: 140px;
+    border-radius: 20px;
   }
 
 }
 
 /* Media query pentru ecrane cu lățimea maximă de 486px */
-@media only screen and (max-width: 486px) {
-  
+@media only screen and (max-height: 800px) {
+  .row-atu{
+    gap: 2rem;
+  }
 }
+

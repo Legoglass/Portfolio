@@ -9,10 +9,13 @@
   background-repeat: no-repeat;
   display: flex;
   height: 100vh;
+  scroll-snap-align: center;
+  overflow: hidden;
 }
 
 .text-container{
   margin:0 8rem ;
+  
 }
 
 p{
@@ -53,11 +56,46 @@ span{
   color: white;
   font-weight: 400;
   border: solid 1px #28BC2E;
-  background: none;
+  background:none;
   margin-top: 2.5rem;
   width: 20rem;
   height: 4rem;
   text-align: center;
+  overflow: hidden;
+  --offset : 2px;
+  position: relative;
+
+}
+
+.contact-btn::before{
+  content: '';
+  background: conic-gradient(transparent 170deg, #4ed352, transparent);
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 2s linear infinite;
+}
+.contact-btn::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  background-color: black;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 1 * var(--offset));
+  width: calc(100% - 1 * var(--offset));
+}
+@keyframes rotate {
+  from {
+      transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+      transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
 }
 
 .link-btn{
@@ -67,6 +105,8 @@ span{
   color: white;
   font-weight: 400;
   text-align: center;
+  z-index: 99;
+  position: relative;
 }
 
 html {
@@ -78,3 +118,4 @@ a{
   color: white;
   font-family:"Kanit" , sans-serif;
 }
+

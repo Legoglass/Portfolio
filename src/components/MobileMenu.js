@@ -2,7 +2,7 @@ import CloseMenu from "../assets/close_24dp_FILL0_wght400_GRAD0_opsz24.png";
 import "../css/mobile.css";
 import { motion } from "framer-motion";
 
-export function MobileMenu({ handleMobileMenu }) {
+export function MobileMenu({ handleMobileMenu, mobileMenu }) {
   return (
     <motion.div
       initial={{ y: -300, opacity: 0 }}
@@ -33,7 +33,7 @@ export function MobileMenu({ handleMobileMenu }) {
         </li>
         <li className="d-flex align-self-center">
           <a
-            href="#projects"
+            href="#atu"
             onClick={() => {
               handleMobileMenu();
             }}

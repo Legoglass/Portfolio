@@ -43,15 +43,23 @@ function Skills() {
   };
 
   return (
-    <div id="skills" className="background-skills">
-      <div className="content-container d-flex flex-column justify-content-around">
-        <div className="text-skill offset-1 col-10 col-xl-4">
+    <div className="background-skills">
+      <div
+        id="skills"
+        className="content-container d-flex flex-column justify-content-around"
+      >
+        <motion.div
+          initial={{ y: "100%", opacity: 0, scale: "200%" }}
+          whileInView={{ y: 0, opacity: 1, scale: "100%" }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+          className="text-skill offset-1 col-10 col-xl-4"
+        >
           <p className="p-skills">
             Passionate web developer skilled in crafting dynamic digital
             experiences. <span>Let's collaborate </span>and turn your web vision
             into reality. Contact me for more details!
           </p>
-        </div>
+        </motion.div>
         <div className="img-skill-container">
           <motion.div className="imgs-skill" {...scrollAnimation}>
             {duplicatedImages.map((src, index) => (
